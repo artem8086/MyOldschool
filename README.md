@@ -1,1 +1,1 @@
-This my oldschool programs repo
+This is my oldschool programs repo
