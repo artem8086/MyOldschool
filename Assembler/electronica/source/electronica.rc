@@ -1,0 +1,74 @@
+#include "\MASM32\include\Resource.h"
+
+10 ICON 1.ico
+
+100 ICON or.ico
+101 ICON xor.ico
+102 ICON and.ico
+103 ICON not.ico
+104 ICON but3off.ico
+105 ICON but3on.ico
+106 ICON line.ico
+107 ICON payalka.ico
+
+11 CURSOR mouse2.cur
+
+MENUP MENU
+{
+POPUP "&Файл"
+{
+MENUITEM "&Новый ",1
+MENUITEM "Открыть...",2
+MENUITEM "Сохранить...",3
+MENUITEM "",0
+MENUITEM "Выход ALT+F4",4
+}
+POPUP "&Редактировать"
+{
+MENUITEM "Удалить все провода",10
+MENUITEM "Удалить все элементы",11
+MENUITEM "Отменить элемент",12
+MENUITEM "Отменить провод",13
+}
+;POPUP "Настройки"
+;{
+;MENUITEM "Анимировать провода",20
+;MENUITEM "Отменить анимацию проводов",21
+;MENUITEM "",0
+;MENUITEM "Анимировать элементы",22
+;MENUITEM "Отменить анимацию элементов",23
+;}
+MENUITEM "Справка", 5
+}
+
+a2 DIALOG  0,0,146,28
+
+STYLE WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+
+CAPTION "Инструменты"
+{
+CTEXT     "Инструмент:",1,0,0,41,10,0
+}
+
+1 VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+ FILEFLAGS 0x1L
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "CompanyName", "Artem Electronic  программа для создания электронных схем"
+            VALUE "LegalCopyright", "Copyright (C) 2011"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
